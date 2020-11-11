@@ -16,7 +16,8 @@ Version: 1.0
 
 */
 
-body{font-family:Verdana, Geneva, sans-serif;font-size:14px;line-height:160%;background-color:#ECDAF2;margin:0;padding:0;}
+
+body{font-family:'ZCOOL KuaiLe', cursive, Verdana, Geneva, sans-serif;font-size:1rem;line-height:160%;background-color:#ECDAF2;margin:0;padding:0;}
 
 .clouds{background:url(../pic/cloud.jpg) repeat scroll 0 0 transparent;width:100%;}
 
@@ -34,7 +35,7 @@ body{font-family:Verdana, Geneva, sans-serif;font-size:14px;line-height:160%;bac
 
 #pageHeader #anniversary span{position:absolute;color:#FFB296;font-size:30px;margin:82px 0 0 35px;}
 
-#pageHeader ul{font-family:"Microsoft YaHei";margin:0;padding:400px 0 0 60px;}
+#pageHeader ul{font-family:'ZCOOL KuaiLe', cursive, Verdana, Geneva, sans-serif;font-size:1.2rem;margin:0;padding:400px 0 0 60px;}
 
 #pageHeader li{display:block;float:left;margin:0;padding:0 0 0 10px;}
 
