@@ -4,6 +4,6 @@
 
 为方便你的另一半操作博客，采用微信发文，暂支持文字和外链图片。
 
-演示站: [https://www.heson10.com](https://www.heson10.com)
+演示站: [https://www.heson10.com/lovebb](https://www.heson10.com/lovebb)
 
 ![SweetCloud蜜云，hexo微主题](https://cdn.jsdelivr.net/gh/heson10/pic@master/pic/20201110231901.png)
