@@ -1,0 +1,35 @@
+
+# 作者信息
+boy:
+  name: 黑石 #男生昵称
+  avatar:
+girl:
+  name: 小燕 #女生昵称
+  avatar:
+
+#导航条
+menu:
+  🚩首页: /
+  💞情侣哔哔: https://www.heson10.com/lovebb
+
+
+
+# 哔哔设置 ☆必须
+#男生的哔哔
+boybb:
+  appId: 0KzOX4vC7Jsk6vzUGNeEiUaI-gzGzoHsz
+  appKey: HwCiWuxfpvKiLm4teCUgTIba
+  serverUrl: https://bbapi.heson10.com
+
+#女生的哔哔
+girlbb:
+  appId: 3ESXk94AEyyC1UiW314gQQz1-gzGzoHsz
+  appKey: x76rfLe86pJxt2Tlzs3a67q6
+  serverUrl: https://xfbb.heson10.com
+
+
+# 相恋纪念日
+anniversary: '2015-06-30'
+
+# 百度统计
+baidu_analytics_key: # 5fb5fd0062e816d3a3ca2dacf095bc0f 

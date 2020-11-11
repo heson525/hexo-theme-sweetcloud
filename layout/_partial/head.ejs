@@ -1,0 +1,27 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title><%= config.title %></title>
+  <%- css('css/style')%>
+
+
+  <!--百度统计-->
+<% if(theme.baidu_analytics_key) {%>
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      setTimeout(function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?<%= theme.baidu_analytics_key %>";
+        hm.defer = true;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      }, 5000);
+    })();
+  </script>
+<% } %>
+</head>
+
