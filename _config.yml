@@ -2,15 +2,16 @@
 # 作者信息
 boy:
   name: 黑石 #男生昵称
-  avatar:
+  avatar: 
 girl:
   name: 小燕 #女生昵称
-  avatar:
+  avatar: 
 
 #导航条
 menu:
-  🚩首页: /
+  🚩黑石博客: https://www.heson10.com/
   💞情侣哔哔: https://www.heson10.com/lovebb
+  #页面名称: 页面地址
 
 
 

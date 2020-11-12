@@ -1,0 +1,49 @@
+
+
+          <div id="articleMale">
+
+            <main id="app">
+
+              <div class="timenode" v-for="item in contents" v-cloak>
+                <div class="meta">
+                  <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+                </div>
+                <div class="body">
+                  <p v-html='item.attributes.content'></p>
+                </div>
+              </div>
+              <div class="load-ctn">
+                <a class="btn lv" v-on:click="loadMore1" v-if="contents" v-cloak>再翻翻</a>
+                <p class="tip" v-else>别急，加载呢</p>
+                </div>
+              <p class="tip">共计发送 {{count}} 条说说</p>
+            </main>
+
+
+
+
+
+
+
+          </div>
+
+          <div id="articleFemale">
+
+            <main id="app2">
+
+              <div class="timenode" v-for="item in contents" v-cloak>
+                <div class="meta">
+                  <p><time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time></p>
+                </div>
+                <div class="body">
+                  <p v-html='item.attributes.content'></p>
+                </div>
+              </div>
+              <div class="load-ctn">
+                <a class="btn lv" v-on:click="loadMore2" v-if="contents" v-cloak>再翻翻</a>
+                <p class="tip" v-else>别急，加载呢</p>
+                </div>
+              <p class="tip">共计发送 {{count}} 条说说</p>
+            </main>
+
+          </div>

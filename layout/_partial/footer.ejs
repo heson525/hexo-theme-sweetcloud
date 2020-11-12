@@ -135,7 +135,7 @@
                     resC.forEach((i) => {
                         let d = new Date(i.createdAt);
                         datetime = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
-                        i.attributes.time = datetime;
+                        i.attributes.time = datetime;//☆友好地显示时间改为 i.attributes.time = timeago(d);
                         i.attributes.content = urlToLink(i.attributes.content);
                         app.contents.push(i);
                     })
@@ -156,7 +156,7 @@
                     resC.forEach((i) => {
                         let d = new Date(i.createdAt);
                         datetime = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
-                        i.attributes.time = datetime;
+                        i.attributes.time = datetime; //☆友好地显示时间改为 i.attributes.time = timeago(d);
                         i.attributes.content = urlToLink(i.attributes.content);
                         app2.contents.push(i);
                     })
@@ -165,7 +165,48 @@
             }, function (error) { });
         }
 
+        //友好地显示时间,按需修改上面标记☆的代码
+        function timeago(dateTimeStamp) {
 
+            var minute = 1000 * 60;
+            var hour = minute * 60;
+            var day = hour * 24;
+            var halfamonth = day * 15;
+            var month = day * 30;
+
+            var now = new Date().getTime();
+            var diffValue = now - dateTimeStamp;
+
+            if (diffValue < 0) {
+                //非法操作
+                //alert("结束日期不能小于开始日期！");
+            }
+
+            var monthC = diffValue / month;
+            var weekC = diffValue / (7 * day);
+            var dayC = diffValue / day;
+            var dayR = diffValue / hour % 24;
+            var hourC = diffValue / hour;
+            var hourR = diffValue / minute % 60;
+            var minC = diffValue / minute;
+            var minR = diffValue / 1000 % 60;
+            if (monthC >= 1) {
+                result = getLocalTime(dateTimeStamp / 1000);
+            } else if (weekC >= 1) {
+                result = parseInt(weekC) + "周前";
+            } else if (dayC >= 1) {
+                result = parseInt(dayC) + "天" + parseInt(dayR) + "小时前";
+            } else if (hourC >= 1) {
+                result = parseInt(hourC) + "小时" + parseInt(hourR) + "分钟前";
+            } else if (minC >= 1) {
+                result = parseInt(minC) + "分钟" + parseInt(minR) + "秒前";
+            } else result = "刚刚发表";
+            return result;
+        }
+
+        function getLocalTime(nS) {
+            return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+        }
 
     </script>
 
